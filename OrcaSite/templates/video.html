@@ -1,0 +1,16 @@
+{% load embed_video_tags %}
+<html>
+<html lang="en">
+  <head>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>This ad is sponsored by Intel!</h1>
+    {% for i in obj %}
+    {% video i.video 'small '%}
+    {% endfor    %}
+
+
+  </body>
+</html>
